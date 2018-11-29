@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>管理系统</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='css/reset.css') }}">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="head">
+            <h1>
+                <a href="#" id="logo">
+                    <img src="{{ url_for('static',filename='images/logo.jpg') }}" alt="">
+                    <span>欢迎来到学生信息管理平台</span>
+                </a>
+            </h1>
+        </div>
+        {% block home %}
+
+        {% endblock %}
+    </div>
+</body>
+</html>
